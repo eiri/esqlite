@@ -1,6 +1,9 @@
 language: erlang
+os: linux
 otp_release:
-  - R16B03
-  - R15B01
-  - 17.0
-script: "rebar compile eunit"
+  - 20.1
+  - 19.0
+  - 18.3
+  - 17.5
+script:
+  - make test
